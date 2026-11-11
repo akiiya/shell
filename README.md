@@ -28,16 +28,14 @@ curl -fsSL https://raw.githubusercontent.com/akiiya/shell/main/hev-socks5-instal
 
 ### 带参数直接安装
 
-只要传入任意配置参数，就不会交互询问；未指定的项自动使用默认值。例如仅指定端口：
+只要传入任意配置参数，就不会交互询问；未指定的项自动使用默认值。以下示例包含全部配置参数，可按需修改或省略：
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/akiiya/shell/main/hev-socks5-install.sh | sudo bash -s -- --port 2080
-```
-
-也可以指定全部配置：
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/akiiya/shell/main/hev-socks5-install.sh | sudo bash -s -- --port 2080 --username myuser --password 'YourStrongPassword' --workers 4
+curl -fsSL https://raw.githubusercontent.com/akiiya/shell/main/hev-socks5-install.sh | sudo bash -s -- \
+  --port     65127 \
+  --username 'myuser' \
+  --password 'YourStrongPassword' \
+  --workers  5
 ```
 
 | 参数 | 默认值 | 说明 |
